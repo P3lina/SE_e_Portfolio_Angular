@@ -1,27 +1,63 @@
-# EPortfolioAngular
+# Angular e-Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
+# Table of Contents
 
-## Development server
+## 1. Introduction
+## 2. Installation
+## 3. Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# 1. Introduction
+Angular is a open source web application framework for building single page (SPA) applications. Angular applications can be segmented into building blocks. Building blocks are components, directives, pipes and services.
+### <u>Components</u>
+    <app-custom-button></app-custom-button>
+Components are used to describe a reusable, UI related piece of the application that has a custom DOM element. Components consist of an HTML template, a typescript implementation class, a stylesheet file and a unit testing class.
 
-## Code scaffolding
+Learn more about components
+### <u>Directives</u>
+    <app-custom-button greenBackground></app-custom-button>
+Directives are used to describe a DOM element. Therby directives are UI related and can be used in a reusable way.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Learn more about directives
+### <u>Pipes</u>
+    {{helloString | uppercase}} => HELLO
+Pipes are used to transform displaying data without changing the underlying data.
 
-## Build
+Learn more about pipes
+### <u>Services</u>
+Services are non-UI related, can be used in a reusable way and provide logic to the application. Services consist of a typescript implementation class and a unit testing class.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Learn more about services
 
-## Running unit tests
+# 2. Installation
+First, the <b>Angular CLI</b> needs to be installed. <br>
+The Angular CLI is the command line interface for Angular. With the Angular CLI, you can create new projects, build and serve your Angular applications, install additional modules, and more.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Installing the Angular CLI (Node Package Manager (NPM) required):
 
-## Running end-to-end tests
+    npm install -g @angular/cli
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# 3. Getting Started
+<u style="font-size:1.5rem;"><b>Creating a new project</b></u><br>
+After installing the Angular CLI, you can create a new project by running the following command:
+  
+    ng new <project-name>
 
-## Further help
+In the following dialog you will be asked if you also want to install Angular routing:
+<img src="images/installRouting.png" alt="? Would you like to add Angular routing? (y/N)"/><br>
+<b>Angular routing:</b><br>
+As depicted above, Angular is a single page application framework that changes the views by showing or hiding portions of the display that correspond to particular components, rather than requesting the server for a new page. <br>
+However, interacting with the application may require moving between different views. These navigations are handled by the Angular routing system.<br>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Next, you will be asked for the type of stylesheet format you want to use: <br>
+<img src="images/installStylesheet.png"><br>
+This may be personal preference, in this project however, Sass will be used.
+
+<u style="font-size:1.5rem;"><b>Starting the development server</b></u><br>
+After creating the project, all required files will be generated. To get a first look at the application, you can start the development server by running the following command: <br>
+
+    ng serve
+and open your browser to http://localhost:4200/ or
+
+    ng serve --open
+to open the application directly in your browser. <br>
+Until now the application should only consist of an Angular template.

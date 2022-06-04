@@ -1,4 +1,5 @@
 # Angular e-Portfolio
+<img src="images/angular.png" width="200px" alt="Angular">
 
 # Table of Contents
 

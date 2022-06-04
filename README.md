@@ -7,7 +7,7 @@
 ## 3. Getting Started
 
 # 1. Introduction
-Angular is a open source web application framework for building single page (SPA) applications. Angular applications can be segmented into building blocks. Building blocks are components, directives, pipes and services.
+Angular is an open source web application framework for building single page (SPA) applications. Angular applications can be segmented into building blocks. Building blocks are components, directives, pipes and services.
 ### <u>Components</u>
     <app-custom-button></app-custom-button>
 Components are used to describe a reusable, UI related piece of the application that has a custom DOM element. Components consist of an HTML template, a typescript implementation class, a stylesheet file and a unit testing class.
@@ -61,3 +61,21 @@ and open your browser to http://localhost:4200/ or
     ng serve --open
 to open the application directly in your browser. <br>
 Until now the application should only consist of an Angular template.
+
+<u style="font-size:1.5rem;"><b>The working directory</b></u><br>
+By creating the Angular project, many files are also generated. The main directory however, is the <b>src/app</b> directory. This directory contains the application code and will be exclusively dealt with in this tutorial.
+
+By default, the <b>src/app</b> directory only contains the root component, the <b>app.module.ts</b> file, which describes how the application fits together, and the routing file.
+Inside the root components html class (by default <b>app.component.html</b>) you can find the Angular template you have seen in the browser. To begin with developing the application this code can be deleted.
+
+<u style="font-size:1.5rem;"><b>Creating a component</b></u><br>
+To begin developing the application, you need to create a component. This is done by running the following command:
+
+    ng generate component <component-name>
+or
+
+    ng g c <component-name>
+The new component will be created in the <b>src/app</b> directory.
+The html, stylesheet and typescript code can be written directly in the generated files. To be able to see the component however, it needs to be added to the root component. This is done by the syntax explained in the component section:
+
+    <app-<component-name>></app-<component-name>>

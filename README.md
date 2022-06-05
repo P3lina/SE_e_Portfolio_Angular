@@ -12,7 +12,7 @@ This repository was created in the course of an e-portfolio at the DHBW-Karlsruh
 ### 3. [Getting started](#getting-started)
 <a name="introduction"></a>
 # 1. Introduction
-Angular is an open source web application framework for building single page (SPA) applications. Angular applications can be segmented into building blocks. Building blocks are components, directives, pipes and services.
+Angular is an open source, platform-agnostic web application framework for building single page (SPA) applications. Angular applications can be segmented into building blocks. Building blocks are among others components, directives, pipes and services.
 ### <u>Components</u>
     <app-custom-button></app-custom-button>
 Components are used to describe a reusable, UI related piece of the application that has a custom DOM element. Components consist of an HTML template, a typescript implementation class, a stylesheet file and a unit testing class.

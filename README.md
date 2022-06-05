@@ -1,15 +1,15 @@
 # Angular e-Portfolio
-<p style="text-align: center; font-size: 1.5rem; font-weight: bold">
-About this repository:
-</p>
-<p style="margin-top: 10%; position: absolute; left:50%; transform: translate(-50%, -50%); text-align: center">This repository was created in the course of an e-portfolio at the DHBW-Karlsruhe. It contains a guide on how to get started with an Angular project and the most important knowledge to do so. Except for the guide, this repository contains an Angular project that practically applies the techniques explained in the guide.</p>
-<div style="text-align: center; margin-top: 25%"><img src="images/angular.png" style="width: 200px" alt="Angular"></div>
+
+###About this repository:
+
+This repository was created in the course of an e-portfolio at the DHBW-Karlsruhe. It contains a guide on how to get started with an Angular project and the most important knowledge to do so. Except for the guide, this repository contains an Angular project that practically applies the techniques explained in the guide.
+<img src="images/angular.png" alt="Angular">
 
 ## Table of Contents
 
-### 1. Introduction
-### 2. Installation
-### 3. Getting Started
+### 1. [Introduction](#introduction)
+### 2. [Installation](#installation)
+### 3. [Getting started](#getting-started)
 
 # 1. Introduction
 Angular is an open source web application framework for building single page (SPA) applications. Angular applications can be segmented into building blocks. Building blocks are components, directives, pipes and services.
@@ -32,7 +32,6 @@ Learn more about pipes
 Services are non-UI related, can be used in a reusable way and provide logic to the application. Services consist of a typescript implementation class and a unit testing class.
 
 Learn more about services
-
 # 2. Installation
 First, the <b>Angular CLI</b> needs to be installed. <br>
 The Angular CLI is the command line interface for Angular. With the Angular CLI, you can create new projects, build and serve your Angular applications, install additional modules, and more.
@@ -40,7 +39,6 @@ The Angular CLI is the command line interface for Angular. With the Angular CLI,
 Installing the Angular CLI (Node Package Manager (NPM) required):
 
     npm install -g @angular/cli
-
 # 3. Getting Started
 <u style="font-size:1.5rem;"><b>Creating a new project</b></u><br>
 After installing the Angular CLI, you can create a new project by running the following command:

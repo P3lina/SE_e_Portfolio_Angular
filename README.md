@@ -10,7 +10,7 @@ This repository was created in the course of an e-portfolio at the DHBW-Karlsruh
 ### 1. [Introduction](#introduction)
 ### 2. [Installation](#installation)
 ### 3. [Getting started](#getting-started)
-
+<a name="introduction"></a>
 # 1. Introduction
 Angular is an open source web application framework for building single page (SPA) applications. Angular applications can be segmented into building blocks. Building blocks are components, directives, pipes and services.
 ### <u>Components</u>
@@ -32,6 +32,7 @@ Learn more about pipes
 Services are non-UI related, can be used in a reusable way and provide logic to the application. Services consist of a typescript implementation class and a unit testing class.
 
 Learn more about services
+<a name="installation"></a>
 # 2. Installation
 First, the <b>Angular CLI</b> needs to be installed. <br>
 The Angular CLI is the command line interface for Angular. With the Angular CLI, you can create new projects, build and serve your Angular applications, install additional modules, and more.
@@ -39,6 +40,7 @@ The Angular CLI is the command line interface for Angular. With the Angular CLI,
 Installing the Angular CLI (Node Package Manager (NPM) required):
 
     npm install -g @angular/cli
+<a name="getting-started"></a>
 # 3. Getting Started
 <u style="font-size:1.5rem;"><b>Creating a new project</b></u><br>
 After installing the Angular CLI, you can create a new project by running the following command:

@@ -1,11 +1,15 @@
 # Angular e-Portfolio
-<img src="images/angular.png" width="200px" alt="Angular">
+<p style="text-align: center; font-size: 1.5rem; font-weight: bold">
+About this repository:
+</p>
+<p style="margin-top: 10%; position: absolute; left:50%; transform: translate(-50%, -50%); text-align: center">This repository was created in the course of an e-portfolio at the DHBW-Karlsruhe. It contains a guide on how to get started with an Angular project and the most important knowledge to do so. Except for the guide, this repository contains an Angular project that practically applies the techniques explained in the guide.</p>
+<div style="text-align: center; margin-top: 25%"><img src="images/angular.png" style="width: 200px" alt="Angular"></div>
 
-# Table of Contents
+## Table of Contents
 
-## 1. Introduction
-## 2. Installation
-## 3. Getting Started
+### 1. Introduction
+### 2. Installation
+### 3. Getting Started
 
 # 1. Introduction
 Angular is an open source web application framework for building single page (SPA) applications. Angular applications can be segmented into building blocks. Building blocks are components, directives, pipes and services.
@@ -16,7 +20,7 @@ Components are used to describe a reusable, UI related piece of the application 
 Learn more about components
 ### <u>Directives</u>
     <app-custom-button greenBackground></app-custom-button>
-Directives are used to describe a DOM element. Therby directives are UI related and can be used in a reusable way.
+Directives are used to describe a DOM element. Thereby directives are UI related and can be used in a reusable way.
 
 Learn more about directives
 ### <u>Pipes</u>
@@ -77,6 +81,47 @@ or
 
     ng g c <component-name>
 The new component will be created in the <b>src/app</b> directory.
-The html, stylesheet and typescript code can be written directly in the generated files. To be able to see the component however, it needs to be added to the root component. This is done by the syntax explained in the component section:
+The html, stylesheet and typescript code can be written directly in the generated files. To be able to see the component however, it needs to be added to the root component. This is done by the syntax mentioned in the component section:
 
     <app-<component-name>></app-<component-name>>
+In addition to that, the component needs to be added to the <b>app.module.ts</b> file. This file contains the declarations of all components and directives. However, normally this is done by Angular automatically.
+
+<u style="font-size:1.5rem;"><b>Creating a directive</b></u><br>
+After creating a component, we want to manipulate the styling of the component (a DOM element). This is done by using directives. Directives can be created by running the following command:
+
+    ng generate directive <directive-name>
+or
+
+    ng g d <directive-name>
+To be able to differentiate between components, directives and other building blocks, we may want to create the directives in a separate directory:
+<img src="images/createDirective.png"><br>
+By applying this code e.g.
+
+    constructor(private elementRef: ElementRef) {
+      this.elementRef.nativeElement.style.backgroundColor = 'green';
+    }
+to the directive, every DOM element that is manipulated with this directive will have a green background.
+
+<u style="font-size:1.5rem;"><b>Creating a pipe</b></u><br>
+Now, we are able to manipulate the styling of our components, but we want to be able to display the data of our components in a more readable way. This is done by pipes. Pipes can be created by running the following command:
+
+    ng generate pipe <pipe-name>
+or
+
+    ng g p <pipe-name>
+If we e.g. have a string array of text we want to use on our site and do not want to modify the array, we can create a pipe that transforms this array into a string by using the following code inside the pipe class:
+
+    transform(value: string[]) {
+      return value.join(' ');
+    }
+The pipe can then be used with the pipe operator:
+
+    {{array | <pipe-name>}}
+<u style="font-size:1.5rem;"><b>Creating a service</b></u><br>
+To be able to separate UI code inside our component class from logic (e.g. HTTP requests or user management), we can use services. Services can be created by running the following command:
+
+    ng generate service <service-name>
+or
+
+    ng g s <service-name>
+Methods in these classes can easily be used in an object-oriented way.

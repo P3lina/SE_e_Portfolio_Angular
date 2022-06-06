@@ -3,7 +3,8 @@
 ###About this repository:
 
 This repository was created in the course of an e-portfolio at the DHBW-Karlsruhe. It contains a guide on how to get started with an Angular project and the most important knowledge to do so. Except for the guide, this repository contains an Angular project that practically applies the techniques explained in the guide.
-<img src="images/angular.png" alt="Angular">
+
+<img src="images/angular.png" alt="Angular" width=200px>
 
 ## Table of Contents
 

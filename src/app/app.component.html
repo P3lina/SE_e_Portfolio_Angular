@@ -1,6 +1,5 @@
-<app-order-item [title]="'Motorrad'" [description]="'Kawasaki'" [price]="'5900€'"></app-order-item>
-<app-order-item [title]="'Motorrad'" [description]="'Yamaha'" [price]="'3200€'"></app-order-item>
-<app-order-item [title]="'Motorrad'" [description]="'Honda'" [price]="'13900€'"></app-order-item>
-<app-order-item [title]="'Motorrad'" [description]="'Suzuki'" [price]="'4200€'"></app-order-item>
+<ng-container *ngFor="let angebot of angebote">
+    <app-order-item [title]="angebot.title" [description]="angebot.description" [price]="angebot.price"></app-order-item>
+</ng-container>
 
-TODO: Komponente XKCD
+<app-xkcd-cartoon></app-xkcd-cartoon>

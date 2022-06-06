@@ -1,0 +1,7 @@
+<!--<button (click)="showImage()">Show Image</button>-->
+<ng-container *ngIf="srcUrl | async as src else loading">
+  <img [src]="src" alt="Cartoon">
+</ng-container>
+<ng-template #loading>
+  <mat-spinner></mat-spinner>
+</ng-template>
